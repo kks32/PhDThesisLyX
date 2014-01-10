@@ -4,6 +4,21 @@
 \begin_header
 \textclass PhDThesisPSnPDF
 \begin_preamble
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                            %%
+%% Class ``PhD Thesis PSnPDF''                                                %%
+%%                                                                            %%
+%% A PhD thesis LyX template for Cambridge University Engineering Department  %%
+%%                                                                            %%
+%% Version: v1.0                                                              %%
+%% Authors: Krishna Kumar                                                     %%
+%% Date: 10/01/2014 (inception)                                               %%
+%% License: MIT License (c) 2014 Krishna Kumar                                %%
+%% GitHub Repo: https://github.com/kks32/PhDThesisLyX			      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \title{How to write your PhD Thesis in LyX}
 \author{Krishna Kumar}
 \dept{Department of Engineering}
@@ -12,6 +27,9 @@
 \degree{Doctor of Philosophy}
 \college{King's College}
 \degreedate{2013}
+
+% Use graphics package
+\usepackage{graphicx}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -96,18 +114,38 @@ title, author, year, department
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+% Title Page
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
 maketitle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+% FrontMatter
 \end_layout
 
 \end_inset
@@ -156,6 +194,27 @@ filename "abstract/Abstract.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% List of Contents, Figures and Tables
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{romanpages}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -178,9 +237,23 @@ LatexCommand tableofcontents
 \end_inset
 
 
-\begin_inset CommandInset nomencl_print
-LatexCommand printnomenclature
-set_width "auto"
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{romanpages}
+\end_layout
+
+\begin_layout Plain Layout
+
+% Main matter
+\end_layout
 
 \end_inset
 
@@ -192,6 +265,28 @@ set_width "auto"
 LatexCommand include
 filename "Chapter1/Chapter 1.lyx"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Back matter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\bibname}{References}
 \end_inset
 
 
