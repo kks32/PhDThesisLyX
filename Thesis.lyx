@@ -23,7 +23,7 @@
 \author{Krishna Kumar}
 \dept{Department of Engineering}
 \university{University of Cambridge}
-\crest{\includegraphics[width=0.25\textwidth]{University_Crest}}
+\crest{\includegraphics[width=0.25\textwidth]{Figs/University_Crest}}
 \degree{Doctor of Philosophy}
 \college{King's College}
 \degreedate{2013}
@@ -31,6 +31,7 @@
 % Use graphics package
 \usepackage{graphicx}
 \end_preamble
+\options a4paper,12pt,numbered
 \use_default_options false
 \maintain_unincluded_children false
 \language english
@@ -93,19 +94,178 @@
 status open
 
 \begin_layout Plain Layout
-This is Krishna Kumar's Cambridge PhD Thesis example ported to LyX
+
+\series bold
+Cambridge University Engineering Department Thesis Template ported to LyX2.0
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Author: Krishna Kumar
+\end_layout
+
+\begin_layout Plain Layout
+Distributed under MIT License.
+\end_layout
+
+\begin_layout Plain Layout
+Website: https://github.com/kks32/PhDThesisLyX
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Thesis Information
 \end_layout
 
 \begin_layout Plain Layout
 Go to 
 \family sans
-Document > Parameters > LaTeX preamble
+Document > Settings > LaTeX preamble
 \family default
  to modify the 
 \family sans
 title, author, year, department
 \family default
  fields.
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Custom Options
+\end_layout
+
+\begin_layout Plain Layout
+To set custom options supported by the class file go to Document > Settings
+ > Document class and enter 
+\begin_inset Quotes eld
+\end_inset
+
+a4paper,12pt,numbered
+\begin_inset Quotes erd
+\end_inset
+
+ without quotes in the custom field.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Paper Size
+\series default
+: a4paper / a5paper
+\end_layout
+
+\begin_layout Plain Layout
+`a4paper'(The University of Cambridge PhD thesis guidelines recommends a4
+ page size - default option) or `a5paper': A5 Paper size is also allowed
+ as per the Cambridge University Engineering Deparment guidelines for PhD
+ thesis 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+FontSize: 
+\series default
+10pt / 11pt / 12pt
+\end_layout
+
+\begin_layout Plain Layout
+`11pt' or `12pt'(default): Font Size 10pt is NOT recommended by the University
+ guidelines 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Layout: 
+\series default
+`
+\series bold
+oneside
+\series default
+' or `
+\series bold
+twoside
+\series default
+'(default): Printing double side (twoside) or single side.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Mode (print / online)
+\series default
+: Use `print' for print version with appropriate margins and page layout.
+ Leaving the options field blank will activate Online version.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+index
+\series default
+: For index at the end of the thesis 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+draft
+\series default
+: For draft mode without loading any images (same as draft in book) 
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Bibliography style: 
+\end_layout
+
+\begin_layout Plain Layout
+To define document class options like bibliography style (
+\series bold
+numbered
+\series default
+ / 
+\series bold
+authoryear
+\series default
+) go to Document > Settings > Document classs and enter 
+\begin_inset Quotes eld
+\end_inset
+
+numbered
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+authoryear
+\begin_inset Quotes erd
+\end_inset
+
+ without quotes in the custom field.
 \end_layout
 
 \end_inset
@@ -156,7 +316,7 @@ end{titlepage}
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "dedication/Dedication.lyx"
+filename "Dedication/Dedication.lyx"
 
 \end_inset
 
@@ -166,7 +326,7 @@ filename "dedication/Dedication.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "declaration/Declaration.lyx"
+filename "Declaration/Declaration.lyx"
 
 \end_inset
 
@@ -176,7 +336,7 @@ filename "declaration/Declaration.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "acknowledgments/Acknowledgments.lyx"
+filename "Acknowledgments/Acknowledgments.lyx"
 
 \end_inset
 
@@ -186,7 +346,7 @@ filename "acknowledgments/Acknowledgments.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "abstract/Abstract.lyx"
+filename "Abstract/Abstract.lyx"
 
 \end_inset
 
@@ -295,8 +455,8 @@ status open
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "references"
-options "plain"
+bibfiles "References/references"
+options "plainnat"
 
 \end_inset
 
