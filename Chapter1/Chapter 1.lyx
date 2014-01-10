@@ -1,0 +1,239 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass PhDThesisPSnPDF
+\options a4paper,titlepage
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Getting Started
+\end_layout
+
+\begin_layout Section
+What is Loren Ipsum?
+\end_layout
+
+\begin_layout Standard
+Lorem Ipsum is simply dummy text of the printing and typesetting industry
+ (see Section).
+ Lorem Ipsum has been the industry's standard dummy text ever since the
+ 1500s, when an unknown printer took a galley of type and scrambled it to
+ make a type specimen book.
+ It has survived not only five centuries, but also the leap into electronic
+ typesetting, remaining essentially unchanged.
+ It was popularised in the 1960s with the release of Letraset sheets containing
+ Lorem Ipsum passages, and more recently with desktop publishing software
+ like Aldus PageMaker including versions of Lorem Ipsum.
+\end_layout
+
+\begin_layout Subsection
+Fourier Series
+\end_layout
+
+\begin_layout Standard
+For a function 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ you can write the Fourier Series:
+\begin_inset Formula 
+\[
+f(x)=\sum_{-\infty}^{\infty}c_{n}e^{inx},
+\]
+
+\end_inset
+
+where the coefficients 
+\begin_inset Formula $c_{n}$
+\end_inset
+
+are given by 
+\begin_inset Formula 
+\[
+c_{n}=\frac{1}{2\pi}\int_{-\pi}^{\pi}f(x)e^{inx}dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Maxwell's Equations
+\end_layout
+
+\begin_layout Standard
+There are four of the buggers, and I like them in terms of total charge
+ and current:
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+\nabla.\mathbf{E}=\frac{\rho}{\varepsilon_{0}} & \nabla\times\mathbf{E}=-\frac{\partial\mathbf{B}}{\partial t}\\
+\nabla.\mathbf{B}=0 & \nabla\times\mathbf{B}=\mu_{o}\mathbf{J}+\mu_{0}\varepsilon_{0}\frac{\partial\mathbf{E}}{\partial t}
+\end{array}
+\]
+
+\end_inset
+
+Where 
+\series bold
+B 
+\series default
+is the magnetic field, 
+\series bold
+E 
+\series default
+is the electric field and 
+\series bold
+J 
+\series default
+is the total current density.
+ Also, 
+\begin_inset Formula $\varepsilon_{0}$
+\end_inset
+
+ is the permittivity of free space (electric constant) and 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+ is the permeability of free space (magnetic constant).
+ 
+\end_layout
+
+\begin_layout Standard
+It's good to know what these mean in words and integral forms, so:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Gauss' Law: 
+\emph default
+Electric flux through any closed surface is proportional to the enclosed
+ electric charge:
+\begin_inset Formula 
+\[
+\Phi=\oint_{S}\mathbf{E}\, d\mathbf{A}=\frac{Q_{enc}}{\varepsilon_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Gauss' Magnetic Law: 
+\emph default
+Magnetic monopoles don't exist:
+\begin_inset Formula 
+\[
+\oint_{S}\mathbf{B}\, d\mathbf{A}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Faraday's Law of Induction:
+\emph default
+ The induced electromotive force in any closed circuit is equal to the rate
+ of change of the magnetic flux through the circuit:
+\begin_inset Formula 
+\[
+\epsilon=-\frac{d\Phi_{B}}{dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Ampere's Law: 
+\emph default
+The relation between integrated magnetic field and current flowing:
+\begin_inset Formula 
+\[
+\oint_{S}\mathbf{B}\, d\mathbf{\ell}=\mu_{0}I_{enc}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That should be enough to get you started.
+ 
+\end_layout
+
+\begin_layout Section
+Thesis Overview
+\end_layout
+
+\end_body
+\end_document
