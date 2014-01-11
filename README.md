@@ -9,6 +9,19 @@ CUED PhD Thesis Template
 Distributed under MIT License
 
 ## To install LyX styles:
+
+### Mac OSX
+
+1. copy `PhDThesisLyX.cls` to the appropriate LaTeX folder, copy to: `/Users/[username]/Library/texmf/tex/latex/` or `~/Documents/`
+
+2. run `sudo texhash` from the command line
+
+3. copy `PhDThesisLyX.layout` to the appropriate LyX folder, `/Users/[username]/Library/Application Support/LyX-[version]/layouts/`
+
+4. Reconfigure LyX by going to `LyX > Reconfigure`
+
+5. Open the `Thesis.lyx` file, and replace the field with your text to write your thesis.
+
 ### Linux
 
 1. create a local directory `mkdir -p ~/texmf/tex/latex`
@@ -27,6 +40,19 @@ In LyX, the `PhDThesisLyX` style should now be available as a new document class
 
 Make sure the University_Crest files (eps + pdf) are in the same folder as your document.
 
+### Windows OS
+
+1. Copy `PhDThesisLyX.layout` to `C:\Users\<username>\AppData\Roaming\LyX<version>\layouts`.
+
+2. Copy `PhDThesisLyX.cls` to `C:\Users\<username>\AppData\Roaming\MiKTeX\<version>\tex\latex` for MikTeX or `C:\texlive\texmf-local\tex\latex` for TexLive
+   You may need to create this directory manually, though the parent `tex` directory should already be present.
+
+Run `Start` -> `MikTex` -> `Settings` (or on Windows 8: `<Press Windows Key>`, Type 'settings', choose the non-admin 
+   `Settings` item with MikTex icon) then click `Refresh FNDB`.
+
+Now load Lyx and run: `Tools` -> `Reconfigure`. Once complete you'll receive a notification to restart Lyx.
+Do so then load your `Thesis.lyx` and go to `Document` -> `Settings`. 
+In `Document Class` (item in left sidebar list) In the `Document class` dropdown choose `PhDThesisLyX` (items are in alphabetical order).
 
 ## Using the template
 
