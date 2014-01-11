@@ -2,12 +2,12 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass PhDThesisPSnPDF
+\textclass PhDThesisLyX
 \begin_preamble
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                                                            %%
-%% Class ``PhD Thesis PSnPDF''                                                %%
+%% Class ``PhD Thesis LyX''                                                   %%
 %%                                                                            %%
 %% A PhD thesis LyX template for Cambridge University Engineering Department  %%
 %%                                                                            %%
@@ -466,7 +466,7 @@ end{romanpages}
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapter1/Chapter 1.lyx"
+filename "Chapter1/Chapter1.lyx"
 
 \end_inset
 
@@ -476,7 +476,7 @@ filename "Chapter1/Chapter 1.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapter2/Chapter 2.lyx"
+filename "Chapter2/Chapter2.lyx"
 
 \end_inset
 
@@ -486,7 +486,7 @@ filename "Chapter2/Chapter 2.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapter3/Chapter 3.lyx"
+filename "Chapter3/Chapter3.lyx"
 
 \end_inset
 
@@ -520,6 +520,27 @@ status open
 LatexCommand bibtex
 bibfiles "References/references"
 options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset CommandInset include
+LatexCommand include
+filename "Appendix1/Appendix1.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Appendix2/Appendix2.lyx"
 
 \end_inset
 

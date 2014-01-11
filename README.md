@@ -10,17 +10,17 @@ Distributed under MIT License
 
 ## To install LyX styles:
 ### Linux
-1. copy `PhDThesisPSnPDF.cls` to the appropriate LaTeX folder, e.g. under linux, copy it to: `/usr/share/texmf/tex/latex`
+1. copy `PhDThesisLyX.cls` to the appropriate LaTeX folder, e.g. under linux, copy it to: `/usr/share/texmf/tex/latex`
 
 2. run `sudo texhash` from the command line
 
-3. copy `PhDThesisPSnPDF.layout` to the appropriate LyX folder, e.g. under linux, copy it to: `/usr/share/lyx/layouts`
+3. copy `PhDThesisLyX.layout` to the appropriate LyX folder, e.g. under linux, copy it to: `/usr/share/lyx/layouts`
 
 4. Reconfigure LyX by going to Tools > Reconfigure
 
 5. Open the Thesis.lyx file, and replace the fields with your text to write your thesis.
 
-In LyX, the `PhDThesisPSnPDF` style should now be available as a new document class.
+In LyX, the `PhDThesisLyX` style should now be available as a new document class.
 
 Make sure the University_Crest files (eps + pdf) are in the same folder as your document.
 
@@ -63,7 +63,7 @@ To define document class options like bibliography style (numbered / authoryear)
 
 ### Choosing the Page Style
 
-`PhDThesisPSnPDF` defines 3 different page styles (header and footer). The following definition is for `twoside` layout.
+`PhDThesisLyX` defines 3 different page styles (header and footer). The following definition is for `twoside` layout.
 
 * `default (leave empty)`: For Page Numbers in Header (Left Even, Right Odd) and Chapter Name in Header (Right Even) and Section #. Section Name (Left Odd). Blank Footer.
 

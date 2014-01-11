@@ -1,20 +1,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                                                            %%
-%% Class ``PhD Thesis PSnPDF''                                                %%
+%% Class ``PhD Thesis LyX''                                                   %%
 %%                                                                            %%
 %% A PhD thesis LaTeX template for Cambridge University Engineering Department%%
-%%                                                                            %%
+%% Ported to LyX 2.0                                                          %%
 %% Version: v1.0                                                              %%
 %% Authors: Krishna Kumar                                                     %%
-%% Date: 2013/11/16 (inception)                                               %%
+%% Date: 2014/01/10                                                           %%
 %% License: MIT License (c) 2013 Krishna Kumar                                %%
-%% GitHub Repo: https://github.com/kks32/phd-thesis-template/                 %%
+%% Based on: https://github.com/kks32/phd-thesis-template/                    %%
+%% Git Repo: https://github.com/kks32/PhDThesisLyX/                           %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % ************************** Class Identification ******************************
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{PhDThesisPSnPDF}[2013/12/10 version 1.0 by Krishna Kumar]
-\typeout{https://github.com/kks32/phd-thesis-template/}
+\ProvidesClass{PhDThesisLyX}[2014/01/10 version 1.0 by Krishna Kumar]
+\typeout{https://github.com/kks32/PhDThesisLyX/}
 
 
 % ******************************************************************************
@@ -72,7 +73,7 @@
 \newif\ifPHD@abstract\PHD@abstractfalse % Enable Separate Abstract
 \DeclareOption{abstract}{
   \PHD@abstracttrue     
-  \ClassWarning{PhDThesisPSnPDF}{You have chosen an option that generates only
+  \ClassWarning{PhDThesisLyX}{You have chosen an option that generates only
 the Title page and an abstract with PhD title and author name, if this was
 intentional, ignore this warning. Congratulations on submitting your thesis!!
 If not, please remove the option `abstract' from the document class and
@@ -87,7 +88,7 @@ recompile. Good luck with your writing!}
 \newcommand\PHD@ptsize{12pt} %Set Default Size as 12
 
 \DeclareOption{10pt}{
-  \ClassWarning{PhDThesisPSnPDF}{The Cambridge University PhD thesis guidelines
+  \ClassWarning{PhDThesisLyX}{The Cambridge University PhD thesis guidelines
 recommend using a minimum font size of 11pt (12pt is preferred) and 10pt for
 footnotes.}
   \renewcommand\PHD@ptsize{10pt}
@@ -102,7 +103,7 @@ footnotes.}
 \DeclareOption{a4paper}{\renewcommand\PHD@papersize{a4paper}}
 \DeclareOption{a5paper}{\renewcommand\PHD@papersize{a5paper}}
 \DeclareOption{letterpaper}{
-  \ClassWarning{PhDThesisPSnPDF}{The Cambridge University Engineering Deparment
+  \ClassWarning{PhDThesisLyX}{The Cambridge University Engineering Deparment
 PhD thesis guidelines recommend using A4 or A5paper}
   \renewcommand\PHD@papersize{letterpaper}
 }
@@ -118,7 +119,7 @@ PhD thesis guidelines recommend using A4 or A5paper}
 
 % Generates Warning for unknown options
 \DeclareOption*{
-  \ClassWarning{PhDThesisPSnPDF}{Unknown or non-standard option
+  \ClassWarning{PhDThesisLyX}{Unknown or non-standard option
 '\CurrentOption'. I'll see if I can load it from the book class. If you get a
 warning unused global option(s): `\CurrentOption` then the option is not
 supported!} 
@@ -285,7 +286,7 @@ supported!}
          \else
          \RequirePackage[numbers,sort&compress]{natbib} % Default - numbered
          \setBibtrue
-	 \ClassWarning{PhDThesisPSnPDF}{No bibliography style was specified.
+	 \ClassWarning{PhDThesisLyX}{No bibliography style was specified.
 Default numbered style is used. If you would like to use a different style, use
 `authoryear' or `numbered' in the options in documentclass or use `custombib`
 and define the natbibpackage with required style in the Preamble.tex file}

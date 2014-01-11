@@ -2,7 +2,7 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass PhDThesisPSnPDF
+\textclass PhDThesisLyX
 \options a4paper,titlepage
 \use_default_options false
 \maintain_unincluded_children false
