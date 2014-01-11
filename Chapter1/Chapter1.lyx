@@ -93,7 +93,17 @@ key "AAB95,Con78"
  typesetting, remaining essentially unchanged.
  It was popularised in the 1960s with the release of Letraset sheets containing
  Lorem Ipsum passages, and more recently with desktop publishing software
- like Aldus PageMaker including versions of Lorem Ipsum.
+ like Aldus PageMaker including versions of Lorem Ipsum
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Loren Ipsum
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard

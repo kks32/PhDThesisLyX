@@ -217,14 +217,6 @@ Mode (print / online)
 \begin_layout Plain Layout
 
 \series bold
-index
-\series default
-: For index at the end of the thesis 
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
 draft
 \series default
 : For draft mode without loading any images (same as draft in book) 
@@ -607,6 +599,16 @@ filename "Appendix1/Appendix1.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "Appendix2/Appendix2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset index_print
+LatexCommand printindex
+type "idx"
 
 \end_inset
 

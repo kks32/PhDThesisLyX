@@ -76,8 +76,6 @@ To set custom options supported by the class file go to Document > Settings > Do
 
 ***Mode (print / online)***: Use `print` for print version with appropriate margins and page layout. Leaving the options field blank will activate Online version. 
 
-***index***: For index at the end of the thesis use `index`
-
 ***draft***: For draft mode without loading any images (same as draft in book) 
 
 
