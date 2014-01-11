@@ -294,6 +294,41 @@ and define the natbibpackage with required style in the Preamble.tex file}
      \fi
 \fi
 
+% *********************** To copy ligatures and Fonts **************************
+\RequirePackage{textcomp}
+\RequirePackage[utf8,latin9]{inputenc}
+\RequirePackage[T1]{fontenc}
+
+% Font Selection
+\ifPHD@times
+\RequirePackage{mathptmx}  % times roman, including math (where possible)
+\setFonttrue
+\else
+     \ifPHD@fourier
+     \RequirePackage{fourier} % Fourier
+     \setFonttrue
+     \else
+          \ifPHD@customfont
+          \setFontfalse
+          \else
+	  \ClassWarning{PhDThesisPSnPDf}{Using default font Latin Modern. If you
+would like to use other pre-defined fonts use `times' (The Cambridge University
+PhD thesis guidelines recommend using Times font)  or `fourier' or load a custom
+font in the preamble.tex file by specifying `customfont' in the class options}
+          \RequirePackage{lmodern}
+          \setFonttrue
+          \fi
+    \fi
+\fi
+
+\input{glyphtounicode}
+\pdfglyphtounicode{f_f}{FB00}
+\pdfglyphtounicode{f_i}{FB01}
+\pdfglyphtounicode{f_l}{FB02}
+\pdfglyphtounicode{f_f_i}{FB03}
+\pdfglyphtounicode{f_f_l}{FB04}
+\pdfgentounicode=1
+
 
 % ******************************************************************************
 % **************************** Pre-defined Settings ****************************

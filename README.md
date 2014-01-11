@@ -33,7 +33,7 @@ Go to Document > Settings > LaTeX preamble to modify the title, author, year, de
 
 ### Custom Options
 
-To set custom options supported by the class file go to Document > Settings > Document class and enter `a4paper,12pt,numbered` without quotes in the custom field.
+To set custom options supported by the class file go to Document > Settings > Document class and enter `a4paper,12pt,numbered,oneside,draft,print` without quotes in the custom field.
 
 ***Paper Size***: a4paper / a5paper
 
@@ -54,7 +54,7 @@ To set custom options supported by the class file go to Document > Settings > Do
 
 ### Bibliography style: 
 
-To define document class options like bibliography style (numbered / authoryear) go to Document > Settings > Document classs and enter “numbered” or “authoryear” without quotes in the custom field.
+To define document class options like bibliography style (numbered / authoryear) go to Document > Settings > Document classs and include `numbered` or `authoryear` without quotes in the custom field.
 
 * `authoryear`: For author-year citation eg., Krishna (2013)
 
@@ -64,6 +64,8 @@ To define document class options like bibliography style (numbered / authoryear)
 ### Choosing the Page Style
 
 `PhDThesisLyX` defines 3 different page styles (header and footer). The following definition is for `twoside` layout.
+
+Go to Document > Settings > Document class and include `PageStyleI` or `PageStyleII` in the custom field.
 
 * `default (leave empty)`: For Page Numbers in Header (Left Even, Right Odd) and Chapter Name in Header (Right Even) and Section #. Section Name (Left Odd). Blank Footer.
 
@@ -88,6 +90,16 @@ To define document class options like bibliography style (numbered / authoryear)
         Header (Odd)    : 			   				                        1.2 Section Name
         
         Footer[centered]:                           	3
+
+### Choosing the Fonts
+
+`PhDThesisLyX` currently supports three fonts `Times`, `fourier` and `Latin Modern (default)`.
+
+*   `times`: (The University of Cambridge guidelines recommend using Times). Specifying times option in the document class will use `mathptpx` or `Times` font with Math Support.
+*   `fourier`: fourier font with math support
+*   `default (empty)`: When no font is specified, `Latin Modern` is used as the default font with Math Support. 
+
+Go to Document > Settings > Document class and include `times` or `fourier` in the custom field.
 
 ## Known Issues or Bugs 
 * Please report to Krishna (kks32@cam.ac.uk), if you find any bugs

@@ -27,11 +27,8 @@
 \degree{Doctor of Philosophy}
 \college{King's College}
 \degreedate{2013}
-
-% Use graphics package
-\usepackage{graphicx}
 \end_preamble
-\options a4paper,12pt,numbered
+\options a4paper,12pt,numbered,times
 \use_default_options false
 \maintain_unincluded_children false
 \language english
@@ -509,7 +506,7 @@ status open
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\bibname}{References}
+\newcommand{\bibname}{References}
 \end_inset
 
 
