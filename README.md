@@ -89,3 +89,5 @@ To define document class options like bibliography style (numbered / authoryear)
         
         Footer[centered]:                           	3
 
+## Known Issues or Bugs 
+* Hyperlinks doesn't work, package clash issue. 

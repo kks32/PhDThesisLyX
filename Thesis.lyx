@@ -484,6 +484,16 @@ filename "Chapter2/Chapter 2.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter3/Chapter 3.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -499,7 +509,7 @@ status open
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\bibname}{References}
+\renewcommand{\bibname}{References}
 \end_inset
 
 

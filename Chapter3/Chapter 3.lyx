@@ -1,0 +1,317 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass PhDThesisPSnPDF
+\options a4paper,titlepage,12pt,numbered
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+My Third Chapter
+\end_layout
+
+\begin_layout Section
+First Section of the Third Chapter
+\end_layout
+
+\begin_layout Standard
+And now I begin my third chapter here .
+ .
+ .
+ And now to cite some more people 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "prime-number-theorem,texbook,SFPT,latex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+First Subsection in the First Section .
+ .
+ .
+\end_layout
+
+\begin_layout Standard
+and some more
+\end_layout
+
+\begin_layout Subsection
+Second Subsection in the First Section .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+and some more .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout Subsubsection
+First subsub section in the second subsection .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+and some more in the first subsub section otherwise it all looks the same
+ doesn’t it? well we can add some text to it .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout Subsection
+Third Subsection in the First Section .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+and some more text .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout Subsubsection
+First subsub section in the third subsection .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+and some more in the first subsub section otherwise it all looks the same
+ doesn’t it? well we can add some text to it and some more and some more
+ and some more and some more
+\end_layout
+
+\begin_layout Section
+Second section with a Table
+\end_layout
+
+\begin_layout Standard
+Oh I have a table, which I can to refer (See 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:My-first-table"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:My-first-table"
+
+\end_inset
+
+My first table (I know, it is a really intuitive name) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
