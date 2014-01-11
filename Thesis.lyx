@@ -146,10 +146,14 @@ Custom Options
 \begin_layout Plain Layout
 To set custom options supported by the class file go to Document > Settings
  > Document class and enter 
+\series bold
+
 \begin_inset Quotes eld
 \end_inset
 
-a4paper,12pt,numbered
+a4paper,12pt,numbered,oneside,print
+\series default
+
 \begin_inset Quotes erd
 \end_inset
 
@@ -306,6 +310,51 @@ default (leave empty)
 : Chapter Name on Even Side (Left Even) in Header.
  Section Number % and Section Name in Header on Odd Side (Right Odd).
  Page numbering in footer 
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Font
+\end_layout
+
+\begin_layout Plain Layout
+`
+\series bold
+times
+\series default
+`: (The University of Cambridge guidelines recommend using Times).
+ Specifying times option in the document class will use `mathptpx` or `Times`
+ font with Math Support.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+`
+\series bold
+fourier
+\series default
+`: fourier font with math support
+\end_layout
+
+\begin_layout Plain Layout
+`
+\series bold
+default (empty)
+\series default
+`: When no font is specified, `Latin Modern` is used as the default font
+ with Math Support.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Go to Document > Settings > Document class and include `times` or `fourier`
+ in the custom field.
 \end_layout
 
 \end_inset
@@ -506,7 +555,7 @@ status open
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\bibname}{References}
+\renewcommand{\bibname}{References}
 \end_inset
 
 

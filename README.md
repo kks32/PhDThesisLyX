@@ -10,15 +10,18 @@ Distributed under MIT License
 
 ## To install LyX styles:
 ### Linux
-1. copy `PhDThesisLyX.cls` to the appropriate LaTeX folder, e.g. under linux, copy it to: `/usr/share/texmf/tex/latex`
 
-2. run `sudo texhash` from the command line
+1. create a local directory `mkdir -p ~/texmf/tex/latex`
 
-3. copy `PhDThesisLyX.layout` to the appropriate LyX folder, e.g. under linux, copy it to: `/usr/share/lyx/layouts`
+2. copy `PhDThesisLyX.cls` to the appropriate LaTeX folder, e.g. under linux, copy it to: `~/texmf/tex/latex`
 
-4. Reconfigure LyX by going to Tools > Reconfigure
+3. run `sudo texhash` from the command line
 
-5. Open the Thesis.lyx file, and replace the fields with your text to write your thesis.
+4. copy `PhDThesisLyX.layout` to the appropriate LyX folder, e.g. under linux, copy it to: `~/.lyx/layouts`.
+
+5. Reconfigure LyX by going to Tools > Reconfigure
+
+6. Open the `Thesis.lyx` file, and replace the fields with your text to write your thesis.
 
 In LyX, the `PhDThesisLyX` style should now be available as a new document class.
 
@@ -101,5 +104,7 @@ Go to Document > Settings > Document class and include `PageStyleI` or `PageStyl
 
 Go to Document > Settings > Document class and include `times` or `fourier` in the custom field.
 
-## Known Issues or Bugs 
-* Please report to Krishna (kks32@cam.ac.uk), if you find any bugs
+## Known Issues or Bugs
+ 
+*   If you find any let me know, or even better, patch it and contribute to the development of the LyX Template.
+
