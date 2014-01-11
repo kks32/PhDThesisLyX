@@ -90,4 +90,4 @@ To define document class options like bibliography style (numbered / authoryear)
         Footer[centered]:                           	3
 
 ## Known Issues or Bugs 
-* Hyperlinks doesn't work, package clash issue. 
+* Please report to Krishna (kks32@cam.ac.uk), if you find any bugs

@@ -71,7 +71,15 @@ My First Section
 
 \begin_layout Standard
 I'm going to randomly include a picture Figure.
- If you have trouble viewing this document contact Krishna: kks32@cam.ac.uk
+ If you have trouble viewing this document contact Krishna: 
+\begin_inset CommandInset href
+LatexCommand href
+target "kks32@cam.ac.uk"
+type "mailto:"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
