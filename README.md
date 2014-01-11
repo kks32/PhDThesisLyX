@@ -130,6 +130,26 @@ Go to Document > Settings > Document class and include `PageStyleI` or `PageStyl
 
 Go to Document > Settings > Document class and include `times` or `fourier` in the custom field.
 
+### Nomenclature Definition
+
+* To sort nomenclatures in LyX you can use sort key prefix when entering a new nomenclature entry. In this case a prefix of `g` is used to denote Greek Symbols, followed by `-pi` or `-sort_key`. Use a `-` to separate sort key from the prefixes. 
+
+The standard prefixes defined in this class are:
+
+    * `A` or `a`: Roman Symbols
+
+    * `G` or `g`: Greek Symbols
+
+    * `Z` or `z`: Acronyms/Abbreviations
+
+    * `R` or `r`: Superscripts
+
+    * `S` or `s`: Subscripts
+
+    * `X` or `x`: Other Symbols
+
+
+
 ## Known Issues or Bugs
  
 *   If you find any let me know, or even better, patch it and contribute to the development of the LyX Template.

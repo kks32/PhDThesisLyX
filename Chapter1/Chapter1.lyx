@@ -96,6 +96,52 @@ key "AAB95,Con78"
  like Aldus PageMaker including versions of Lorem Ipsum.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E^{2}=(m_{0}c^{2})^{2}+(pc)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "E"
+description "Energy"
+
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "m0"
+description "intrinsic rest mass"
+
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "c"
+description "speed of light"
+
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "p"
+description "momentum"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Fourier Series
 \end_layout

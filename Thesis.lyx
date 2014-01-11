@@ -494,6 +494,26 @@ status open
 
 \begin_layout Plain Layout
 
+% To print nomenclature
+\end_layout
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+printnomenclature[space] %space can be set as 2.5cm between symbol and descriptio
+n
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+printnomencl
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
 end{romanpages}
@@ -555,7 +575,7 @@ status open
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\bibname}{References}
+\newcommand{\bibname}{References}
 \end_inset
 
 
