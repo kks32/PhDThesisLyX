@@ -56,5 +56,36 @@ To set custom options supported by the class file go to Document > Settings > Do
 
 To define document class options like bibliography style (numbered / authoryear) go to Document > Settings > Document classs and enter “numbered” or “authoryear” without quotes in the custom field.
 
-***authoryear***: eg., Krishna (2013) or (Krishna 2013)
-***numbered***: eg., [1,2] or [1-5]
+* `authoryear`: For author-year citation eg., Krishna (2013)
+
+* `numbered`: (Default Option) For numbered and sorted citation e.g., [1,5,2]
+
+
+### Choosing the Page Style
+
+`PhDThesisPSnPDF` defines 3 different page styles (header and footer). The following definition is for `twoside` layout.
+
+* `default (leave empty)`: For Page Numbers in Header (Left Even, Right Odd) and Chapter Name in Header (Right Even) and Section #. Section Name (Left Odd). Blank Footer.
+
+        Header (Even)   : 4                                                 Introduction 
+
+        Header (Odd)    : 1.2 Section Name 		   			                5
+
+        Footer 		    : Empty
+
+* `PageStyleI`: For Page Numbers in Header (Left Even, Right Odd) and Chapter Name next to the Page Number on Even Side (Left Even). Section Number and Section Name and Page Number in Header on Odd Side (Right Odd). Footer is empty. Layout:
+
+        Header (Even)   : 4 | Introduction 
+
+        Header (Odd)    :                         			                1.2 Section Name | 5
+
+        Footer 		    :                               Empty
+
+* `PageStyleII`: Chapter Name on Even Side (Left Even) in Header. Section Number and Section Name in Header on Odd Side (Right Odd). Page numbering in footer. Layout:
+
+        Header (Even)   : Introduction
+        
+        Header (Odd)    : 			   				                        1.2 Section Name
+        
+        Footer[centered]:                           	3
+

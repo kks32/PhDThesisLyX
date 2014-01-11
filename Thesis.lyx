@@ -274,7 +274,41 @@ authoryear
 \end_layout
 
 \begin_layout Plain Layout
-PageStyle
+
+\series bold
+Page Style
+\end_layout
+
+\begin_layout Plain Layout
+`
+\series bold
+default (leave empty)
+\series default
+': For Page Numbers in Header (Left Even, Right Odd) and Chapter Name in
+ Header (Right Even) and Section Name (Left Odd).
+ Blank Footer.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+`PageStyleI'
+\series default
+: Chapter Name next & Page Number on Even Side (Left Even).
+ Section Name & Page Number in Header on Odd Side (Right Odd).
+ Footer is empty.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+`PageStyleII'
+\series default
+: Chapter Name on Even Side (Left Even) in Header.
+ Section Number % and Section Name in Header on Odd Side (Right Odd).
+ Page numbering in footer 
 \end_layout
 
 \end_inset
@@ -440,6 +474,16 @@ filename "Chapter1/Chapter 1.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter2/Chapter 2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -455,7 +499,7 @@ status open
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\bibname}{References}
+\newcommand{\bibname}{References}
 \end_inset
 
 
