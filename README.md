@@ -62,7 +62,7 @@ Go to Document > Settings > LaTeX preamble to modify the title, author, year, de
 
 ### Custom Options
 
-To set custom options supported by the class file go to Document > Settings > Document class and enter `a4paper,12pt,numbered,oneside,draft,print` without quotes in the custom field.
+To set custom options supported by the class file go to Document > Settings > Document class and enter (for example) `a4paper,12pt,numbered,oneside,draft,print` without quotes in the custom field.
 
 ***Paper Size***: a4paper / a5paper
 
