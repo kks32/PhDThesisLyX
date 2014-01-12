@@ -15,10 +15,10 @@ Style Bibliography
 	EndFont
 End
 
-Style acknowledgements
+Style acknowledgments
 	Margin			Static
 	LatexType		Environment
-	LatexName		acknowledgements
+	LatexName		acknowledgments
 	Category		FrontMatter
 	NextNoIndent		1
 	LeftMargin		MMM
@@ -30,7 +30,7 @@ Style acknowledgements
 	ParSep			0
 	Align			Block
 	LabelType		Centered_Top_Environment
-	LabelString           	"Acknowledgements"
+	LabelString           	"Acknowledgments"
 	LabelBottomSep        	0.5
 	Font
 	  Size                	Small
