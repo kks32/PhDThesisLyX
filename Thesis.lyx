@@ -417,7 +417,7 @@ filename "Declaration/Declaration.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Acknowledgments/Acknowledgments.lyx"
+filename "Acknowledgements/Acknowledgements.lyx"
 
 \end_inset
 
