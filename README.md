@@ -27,6 +27,7 @@ Distributed under MIT License
 1. create a local directory `mkdir -p ~/texmf/tex/latex`
 
 2. copy `PhDThesisLyX.cls` to the appropriate LaTeX folder, e.g. under linux, copy it to: `~/texmf/tex/latex`
+		`cp PhDThesisLyX.cls ~/texmf/tex/latex`
 
 3. run `sudo texhash` from the command line
 

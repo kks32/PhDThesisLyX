@@ -80,6 +80,15 @@ If not, please remove the option `abstract' from the document class and
 recompile. Good luck with your writing!}
 }
 
+% ****************** Chapter Mode - To print only selected chapters ************
+\newif \ifdefineChapter\defineChapterfalse %To enable Separate abstract
+
+\newif\ifPHD@chapter\PHD@chapterfalse % Enable Separate Abstract
+\DeclareOption{chapter}{
+  \PHD@chaptertrue     
+  \ClassWarning{PhDThesisPSnPDF}{You have chosen an option that generates only selected chapters with references, if this was intentional, ignore this warning. If not, please remove the option `chapter' from the document class and recompile. Good luck with your writing!}
+}
+
 \ProcessOptions\relax%
 
 % *************************** Pre-defined Options ******************************
@@ -629,6 +638,26 @@ font in the preamble.tex file by specifying `customfont' in the class options}
         \printindex}
 \else
     \newcommand{\printthesisindex}{}
+\fi
+
+
+% ***************************** Chapter Mode ***********************************
+% The chapter mode allows user to only print particular chapters with references
+% All other options are disabled by default
+% To include only specific chapters without TOC, LOF, Title and Front Matter
+% To send it to supervisior for changes
+
+\ifPHD@chapter
+    \defineChaptertrue
+    % Disable the table of contents, figures, tables, index and nomenclature
+    \renewcommand{\maketitle}{}
+    \renewcommand{\tableofcontents}{}
+    \renewcommand{\listoffigures}{}
+    \renewcommand{\listoftables}{}
+    \renewcommand{\printnomencl}{}
+    \renewcommand{\printthesisindex}{}
+\else
+    \defineChapterfalse
 \fi
 
 
