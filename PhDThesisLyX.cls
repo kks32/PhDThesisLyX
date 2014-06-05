@@ -31,7 +31,7 @@
 \DeclareOption{index}{\PHD@indextrue}
 
 % ******************************* Font Option **********************************
-\newif\ifsetFont\setFontfalse % Font is not set 
+\newif\ifsetFont\setFontfalse % Font is not set
 
 \newif\ifPHD@times\PHD@timesfalse % Times with Math Support
 \DeclareOption{times}{\PHD@timestrue}
@@ -72,7 +72,7 @@
 
 \newif\ifPHD@abstract\PHD@abstractfalse % Enable Separate Abstract
 \DeclareOption{abstract}{
-  \PHD@abstracttrue     
+  \PHD@abstracttrue
   \ClassWarning{PhDThesisLyX}{You have chosen an option that generates only
 the Title page and an abstract with PhD title and author name, if this was
 intentional, ignore this warning. Congratulations on submitting your thesis!!
@@ -85,7 +85,7 @@ recompile. Good luck with your writing!}
 
 \newif\ifPHD@chapter\PHD@chapterfalse % Enable Separate Abstract
 \DeclareOption{chapter}{
-  \PHD@chaptertrue     
+  \PHD@chaptertrue
   \ClassWarning{PhDThesisPSnPDF}{You have chosen an option that generates only selected chapters with references, if this was intentional, ignore this warning. If not, please remove the option `chapter' from the document class and recompile. Good luck with your writing!}
 }
 
@@ -131,7 +131,7 @@ PhD thesis guidelines recommend using A4 or A5paper}
   \ClassWarning{PhDThesisLyX}{Unknown or non-standard option
 '\CurrentOption'. I'll see if I can load it from the book class. If you get a
 warning unused global option(s): `\CurrentOption` then the option is not
-supported!} 
+supported!}
   \PassOptionsToClass{\CurrentOption}{book}
 }
 
@@ -155,7 +155,7 @@ supported!}
 \fi
 
 %* ***************************** Print / Online ********************************
-% Defines a print / online version to define page-layout and hyperrefering 
+% Defines a print / online version to define page-layout and hyperrefering
 \ifsetDVI
 \special{papersize=\the\paperwidth,\the\paperheight}
 \RequirePackage[dvips,unicode=true]{hyperref}
@@ -168,18 +168,18 @@ supported!}
 \if@print
     % For Print version
     \hypersetup{
-      plainpages=false, 
+      plainpages=false,
       pdfstartview=FitV,
-      pdftoolbar=true, 
+      pdftoolbar=true,
       pdfmenubar=true,
       bookmarksopen=true,
-      bookmarksnumbered=true, 
-      breaklinks=true, 
-      linktocpage, 
-      colorlinks=true, 
+      bookmarksnumbered=true,
+      breaklinks=true,
+      linktocpage,
+      colorlinks=true,
       linkcolor=black,
-      urlcolor=black, 
-      citecolor=black, 
+      urlcolor=black,
+      citecolor=black,
       anchorcolor=black
     }
     \ifPHD@custommargin
@@ -194,9 +194,9 @@ supported!}
 	\setMargintrue
     \fi
 
-    \if@twoside 
+    \if@twoside
         \hypersetup{pdfpagelayout=TwoPageRight}
-    \else 
+    \else
     	\hypersetup{pdfpagelayout=OneColumn}
     \fi
 
@@ -204,28 +204,28 @@ supported!}
     % For PDF Online version
     \hypersetup{
       plainpages=false,
-      pdfstartview=FitV, 
-      pdftoolbar=true, 
+      pdfstartview=FitV,
+      pdftoolbar=true,
       pdfmenubar=true,
       bookmarksopen=true,
       bookmarksnumbered=true,
       breaklinks=true,
-      linktocpage, 
-      colorlinks=true, 
-      linkcolor=blue, 
+      linktocpage,
+      colorlinks=true,
+      linkcolor=blue,
       urlcolor=blue,
-      citecolor=blue, 
+      citecolor=blue,
       anchorcolor=green
     }
-    
+
     \ifPHD@custommargin
         \setMarginfalse
     \else
-	% No Margin staggering on Odd and Even side 
+	% No Margin staggering on Odd and Even side
         \ifsetDVI
-	\RequirePackage[dvips,paper=\PHD@papersize,hmarginratio=1:1,vmarginratio=1:1,scale=0.75]{geometry} 
+	\RequirePackage[dvips,paper=\PHD@papersize,hmarginratio=1:1,vmarginratio=1:1,scale=0.75]{geometry}
         \else
-	\RequirePackage[pdftex,paper=\PHD@papersize,hmarginratio=1:1,vmarginratio=1:1,scale=0.75]{geometry} 
+	\RequirePackage[pdftex,paper=\PHD@papersize,hmarginratio=1:1,vmarginratio=1:1,scale=0.75]{geometry}
         \fi
         \setMargintrue
     \fi
@@ -258,10 +258,10 @@ supported!}
 \RequirePackage[title,titletoc]{appendix}
 
 % *************************** Graphics and Figures *****************************
-\RequirePackage[usenames, dvipsnames]{color} 
-\ifpdf 
+\RequirePackage[usenames, dvipsnames]{color}
+\ifpdf
         % Convert eps figures to pdf
-        \RequirePackage{epstopdf} 
+        \RequirePackage{epstopdf}
         \RequirePackage[pdftex]{graphicx}
 	\DeclareGraphicsExtensions{.png, .jpg, .pdf}
 	\pdfcompresslevel=9
@@ -302,6 +302,12 @@ and define the natbibpackage with required style in the Preamble.tex file}
          \fi
      \fi
 \fi
+
+% ***************************** Math and SI Units ******************************
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
 
 % *********************** To copy ligatures and Fonts **************************
 \RequirePackage{textcomp}
@@ -487,7 +493,7 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 \newcommand{\subject}[1]{\renewcommand{\@subject}{#1}}
 
 
-% These macros define an environment for front matter that is always 
+% These macros define an environment for front matter that is always
 % single column even in a double-column document.
 \newenvironment{alwayssingle}{%
        \@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
@@ -536,7 +542,7 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 % Submission Text
 {\large \submissiontext \par}
 \vspace*{1ex}
-{\large \it {\@degree} \par} 
+{\large \it {\@degree} \par}
 
 
 \end{center}
@@ -568,7 +574,7 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 
 
 % ******************************* Declaration **********************************
-% The declaration environment puts a large, bold, centered 
+% The declaration environment puts a large, bold, centered
 % "Declaration" label at the top of the page.
 
 \newenvironment{declaration}{
@@ -586,7 +592,7 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 
 
 % ****************************** Acknowledgements ********************************
-% The acknowledgements environment puts a large, bold, centered 
+% The acknowledgements environment puts a large, bold, centered
 % "Acknowledgements" label at the top of the page.
 
 \newenvironment{acknowledgements}{
@@ -623,7 +629,7 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 \newcommand{\printnomencl}[1][]{
 \ifthenelse{\equal {#1}{}}
 {\printnomenclature}
-{\printnomenclature[#1]} 
+{\printnomenclature[#1]}
 \addcontentsline{toc}{chapter}{\nomname}
 }
 
@@ -694,7 +700,7 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 \else
 % Normal abstract in the thesis
 	\cleardoublepage
-	\setsinglecolumn 
+	\setsinglecolumn
 	\chapter*{\centering \Large Abstract}
 	\thispagestyle{empty}
 \fi
