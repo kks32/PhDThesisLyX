@@ -4,9 +4,9 @@
 %%                                                                            %%
 %% A PhD thesis LaTeX template for Cambridge University Engineering Department%%
 %% Ported to LyX 2.0                                                          %%
-%% Version: v1.0                                                              %%
+%% Version: v1.1                                                              %%
 %% Authors: Krishna Kumar                                                     %%
-%% Date: 2014/01/10                                                           %%
+%% Date: 2014/06/10                                                           %%
 %% License: MIT License (c) 2013 Krishna Kumar                                %%
 %% Based on: https://github.com/kks32/phd-thesis-template/                    %%
 %% Git Repo: https://github.com/kks32/PhDThesisLyX/                           %%
@@ -14,7 +14,7 @@
 
 % ************************** Class Identification ******************************
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{PhDThesisLyX}[2014/01/10 version 1.0 by Krishna Kumar]
+\ProvidesClass{PhDThesisLyX}[2014/06/10 version 1.1 by Krishna Kumar]
 \typeout{https://github.com/kks32/PhDThesisLyX/}
 
 
@@ -168,6 +168,7 @@ supported!}
 \if@print
     % For Print version
     \hypersetup{
+      final=true,
       plainpages=false,
       pdfstartview=FitV,
       pdftoolbar=true,
@@ -203,6 +204,7 @@ supported!}
 \else
     % For PDF Online version
     \hypersetup{
+      final=true,
       plainpages=false,
       pdfstartview=FitV,
       pdftoolbar=true,
@@ -277,8 +279,8 @@ supported!}
 \RequirePackage{url}
 % Redefining urlstyle to use smaller fontsize in References with URLs
 \newcommand{\url@leostyle}{%
- \@ifundefined{selectfont}{\renewcommand{\UrlFont}{\sf}}
- {\renewcommand{\UrlFont}{\small\ttfamily}}}
+ \@ifundefined{selectfont}{\renewcommand{\UrlFont}{\sffamily}}
+ {\renewcommand{\UrlFont}{\normal}}}
 \urlstyle{leo}
 
 % ******************************* Bibliography *********************************
@@ -306,8 +308,8 @@ and define the natbibpackage with required style in the Preamble.tex file}
 % ***************************** Math and SI Units ******************************
 
 \usepackage{amsfonts}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
 
 % *********************** To copy ligatures and Fonts **************************
 \RequirePackage{textcomp}
@@ -542,7 +544,7 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 % Submission Text
 {\large \submissiontext \par}
 \vspace*{1ex}
-{\large \it {\@degree} \par}
+{\large \textit {\@degree} \par}
 
 
 \end{center}
@@ -605,7 +607,7 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 
 
 % ******************************* Nomenclature *********************************
-\usepackage{nomencl}
+\RequirePackage{nomencl}
 \makenomenclature
 \renewcommand{\nomgroup}[1]{%
 \ifthenelse{\equal{#1}{A}}{\item[\textbf{Roman Symbols}]}{%
@@ -706,10 +708,18 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 \fi
 }
 
-
 % ******************************** Line Spacing ********************************
 % Set spacing as 1.5 line spacing for the PhD Thesis
-\onehalfspace
+% In practice, fortunately, nobody knows really what “one-and-a-half spaced
+% type” means exactly (in terms of millimetres baseline distance). The following
+% LaTeX setting has routinely been considered perfectly acceptable:
+
+\renewcommand\baselinestretch{1.2}
+
+% ******************************** Justification *******************************
+% Left aligned as per University identity guidelines
+\raggedright
+
 
 
 % ******************** To compute empty space in title page ********************
@@ -756,7 +766,7 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 \begin{center}
 \large \submissiontext \par
 \vspace*{1ex}
-\large \it {\@degree} \par
+\large \textit {\@degree} \par
 \end{center}
 \end{minipage}
 \end{lrbox}
