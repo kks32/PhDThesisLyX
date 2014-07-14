@@ -716,12 +716,6 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 
 \renewcommand\baselinestretch{1.2}
 
-% ******************************** Justification *******************************
-% Left aligned as per University identity guidelines
-\raggedright
-
-
-
 % ******************** To compute empty space in title page ********************
 % Boxes below are used to space differt contents on the title page
 \newcommand{\computeTitlePageSpacing}{
