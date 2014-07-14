@@ -147,8 +147,35 @@ The standard prefixes defined in this class are:
 
     * `X` or `x`: Other Symbols
 
+### Authoryear citation (citing within parentheses)
+
+* LyX by default doesn't support citep (Author, 2014) and only supports citet Author(2014) citation style. Possible work around is to change the order in which the citation styles are called. This works only in LyX 2.1 (or higher)
+
+* Copy the following code to `Document>>Settings>>Local Layout`:
 
 
+        CiteEngine authoryear
+            Citep*[][]
+            Citet*[][]
+            Citealt*[][]
+            Citealp*[][]
+            Citeauthor*[]
+            citeyear[]
+            citeyearpar[][]
+            nocite
+        End
+        
+        CiteEngine numerical
+            Citep*[][]
+            Citet*[][]
+            Citealt*[][]
+            Citealp*[][]
+            Citeauthor*[]
+            citeyear[]
+            citeyearpar[][]
+            nocite
+        End
+    
 ## Known Issues or Bugs
  
 *   If you find any let me know, or even better, patch it and contribute to the development of the LyX Template.
